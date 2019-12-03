@@ -26,7 +26,7 @@ class TodoForm extends React.Component {
 
     render () {
         return (
-            <div>
+            <div className="todoform">
                 {/* <label>
                     Input:
                     <input onChange={this.handleChanges}/>
@@ -34,19 +34,18 @@ class TodoForm extends React.Component {
                 <button onClick={this.handleSubmit}>Add todo</button>
                 <button>Clear completed</button> */}
                 <form onSubmit={this.handleSubmit}>
-                    <label>
-                        Input:
+                    
                         <input 
                             onChange={this.handleChanges}
                             value={this.state.newTodo}
                             type="text"
                             name="todo"
                         />
-                    </label>
+                    
                     <button>Add todo</button>
                 </form> 
                 
-                    <button onClick={this.props.clearComplete}>Clear completed</button>    
+                    <button className="complete" onClick={this.props.clearComplete}>Clear completed</button>    
                 
             </div>
         )
