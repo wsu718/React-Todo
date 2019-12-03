@@ -1,0 +1,23 @@
+.done {
+    text-decoration: line-through;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todolist {
+
+}
+
+.todoform {
+    border-top: 3px solid black;
+    padding-top: 30px;
+    
+}
+
+.complete {
+    margin-top: 40px;
+}
